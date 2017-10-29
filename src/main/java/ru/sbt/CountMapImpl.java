@@ -2,7 +2,6 @@ package ru.sbt;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * Created by user on 27.10.2017.
  */
@@ -47,7 +46,8 @@ public class CountMapImpl<T> implements CountMap<T> {
     }
 
     @Override
-    public Map<T, Integer> toMap() { return new HashMap<>(this.map);
+    public Map<T, Integer> toMap() {
+        return new HashMap<>(this.map);
     }
 
     @Override
